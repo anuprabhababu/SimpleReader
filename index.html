@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adaptive Reading Aid</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h2>Adaptive Reading Aid (Upload Text File)</h2>
+
+  <p>Upload a plain text (.txt) file with your reading material.</p>
+  <input type="file" id="fileInput" accept=".txt" />
+
+  <div id="customizeControls">
+    <label for="fontSizeSelect">Font Size:</label>
+    <select id="fontSizeSelect">
+      <option value="14">14px</option>
+      <option value="16">16px</option>
+      <option value="18" selected>18px</option>
+      <option value="20">20px</option>
+      <option value="22">22px</option>
+      <option value="24">24px</option>
+      <option value="26">26px</option>
+      <option value="28">28px</option>
+      <option value="30">30px</option>
+      <option value="32">30px</option>
+    </select>
+    <label for="fontStyleSelect">Font Style:</label>
+    <select id="fontStyleSelect">
+      <option value="Arial, sans-serif" selected>Arial (Sans-Serif)</option>
+      <option value="'Open Dyslexic', Arial, sans-serif">OpenDyslexic (Dyslexia-Friendly)</option>
+      <option value="'Comic Sans MS', cursive, sans-serif">Comic Sans MS (Casual)</option>
+      <option value="'Courier New', monospace">Courier New (Monospace)</option>
+      <option value="'Georgia', serif">Georgia (Serif)</option>
+      <option value="'Papyrus', fantasy">Papyrus (Decorative)</option>
+      <option value="'Impact', Charcoal, sans-serif">Impact (Bold & Condensed)</option>
+      <option value="'Lucida Handwriting', cursive">Lucida Handwriting (Script)</option>
+      <option value="'Times New Roman', Times, serif">Times New Roman (Classic Serif)</option>
+    </select>
+    
+
+
+    <label for="fontColorInput">Font Color:</label>
+    <input type="color" id="fontColorInput" value="#000000" />
+  </div>
+
+  <div id="text"></div>
+
+  <div id="controls">
+    <button id="prevBtn" disabled>Previous</button>
+    <button id="nextBtn">Next</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
